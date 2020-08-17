@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07;
+}
+
+body {
+  font-family: "Lexend Deca Regular", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+.cta {
+  border: 3px solid transparent;
+  width: 195px;
+  height: 53px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.cta__primary {
+  background-color: #fcb72b;
+  color: #fff;
+}
+
+.cta__primary:hover {
+  border: 3px solid #fcb72b;
+  color: #fcb72b;
+  background-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */

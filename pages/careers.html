@@ -1,89 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  About
-  Location
-  Careers
+    <link rel="stylesheet" href="../styles/css/main.css" />
 
-  Get Scootin
+    <title>Frontend Mentor | Scoot</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <a href="index.html" class="logo">
+          <img src="../assets/logo.svg" alt="Scoot company logo" />
+        </a>
 
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="about.html" class="main-nav__link">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="locations.html" class="main-nav__link">Location</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="careers.html" class="main-nav__link">Careers</a>
+          </li>
+        </ul>
 
+        <div class="main-nav__cta">
+          <a href="#" class="cta cta__primary">Get Scootin</a>
+        </div>
+      </nav>
 
-  Careers
+      <section class="inner-page__showcase">
+        <div class="inner-page__showcase-message">
+          <h1>Careers</h1>
+        </div>
+      </section>
+    </header>
 
+    <section class="mission">
+      <div class="mission__message">
+        <h2>Care to join our mission?</h2>
+        <p>
+          We’re always looking for ambitious individuals to help us on our
+          journey. If you’re passionate about our mission to provide clean,
+          accessible transport to improve urban living we want to hear from you!
+        </p>
+        <a href="#" class="cta cta__primary">
+          Say Hello
+        </a>
+      </div>
+      <div class="mission__graphic">
+        <img
+          src="../assets/images/join-us.jpg"
+          alt="person holding a tablet leading a team meeting"
+        />
+      </div>
+    </section>
 
+    <section class="values">
+      <div class="values__header">
+        <h2>Why join us?</h2>
+      </div>
 
-  Care to join our mission?
+      <div class="values__details">
+        <div class="values__details-header">
+          <div class="values__details-graphic">
+            <img
+              src="../assets/images/our-tech.jpg"
+              alt="person holding phone with right hand"
+            />
+          </div>
+          <div class="values__details-number">
+            <p>01</p>
+          </div>
+        </div>
+        <div class="values__details-body">
+          <h4>Our tech</h4>
+          <p>
+            We’re using cutting edge technology to drive accessible urban
+            transportation forward. Our fully electric scooters are a joy to
+            ride!
+          </p>
+        </div>
+      </div>
 
-  We’re always looking for ambitious individuals to help us on our journey. If you’re 
-  passionate about our mission to provide clean, accessible transport to improve urban 
-  living we want to hear from you!
+      <div class="values__details">
+        <div class="values__details-header">
+          <div class="values__details-graphic">
+            <img
+              src="../assets/images/our-integrity.jpg"
+              alt="driver riding on a scooter"
+            />
+          </div>
+          <div class="values__details-number">
+            <p>02</p>
+          </div>
+        </div>
+        <div class="values__details-body">
+          <h4>Our integrity</h4>
+          <p>
+            We are fully committed to deliver a great yet safe, sustainable
+            micro-mobility experience in every city we serve.
+          </p>
+        </div>
+      </div>
 
-  Say Hello
+      <div class="values__details">
+        <div class="values__details-header">
+          <div class="values__details-graphic">
+            <img
+              src="../assets/images/our-community.jpg"
+              alt="group of people walking"
+            />
+          </div>
+          <div class="values__details-number">
+            <p>03</p>
+          </div>
+        </div>
+        <div class="values__details-body">
+          <h4>Our community</h4>
+          <p>
+            We support every community we serve. All workers are paid a living
+            wage based on their location and are Scoot employees.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="positions">
+      <div class="position">
+        <div class="position__info">
+          <h4>General Manager</h4>
+          <p>Jakarta, Indonesia</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
 
+      <div class="position">
+        <div class="position__info">
+          <h4>UI/UX Designer</h4>
+          <p>Yokohama, Japan</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
 
-  Why join us?
+      <div class="position">
+        <div class="position__info">
+          <h4>Blog Content Copywriter</h4>
+          <p>New York, United States</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
 
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
+      <div class="position">
+        <div class="position__info">
+          <h4>Graphic Designer</h4>
+          <p>New York, United States</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
 
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
+      <div class="position">
+        <div class="position__info">
+          <h4>Fleet Supervisor</h4>
+          <p>Jakarta, Indonesia</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
 
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
+      <div class="position">
+        <div class="position__info">
+          <h4>UX Analyst</h4>
+          <p>London, United Kingdom</p>
+        </div>
+        <div class="position__cta">
+          <a href="#" class="cta cta__primary">Apply</a>
+        </div>
+      </div>
+    </section>
 
-  
+    <footer class="main-footer">
+      <section class="sign-up">
+        <h2>Sign up and Scoot off today</h2>
+        <div class="sign-up__btns">
+          <a href="#" class="sign-up__btn">
+            <img
+              src="../assets/icons/google-play.svg"
+              alt="get our app in the google play store"
+            />
+          </a>
 
-  General Manager
-  Jakarta, Indonesia
-  Apply
+          <a href="#" class="sign-up__btn">
+            <img
+              src="../assets/icons/app-store.svg"
+              alt="get our app in the apple app store"
+            />
+          </a>
+        </div>
+      </section>
 
-  UI/UX Designer
-  Yokohama, Japan
-  Apply
+      <nav class="main-footer__nav">
+        <div class="main-footer__nav-details">
+          <a href="#" class="logo logo-light"></a>
+          <ul class="main-footer__nav-items">
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link">About</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link">Location</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link"> Careers </a>
+            </li>
+          </ul>
+        </div>
 
-  Blog Content Copywriter
-  New York, United States
-  Apply
+        <div class="main-footer__nav-social">
+          <ul class="main-footer__nav-icons">
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/facebook.svg"
+                  alt="visit our facebook page"
+                />
+              </a>
+            </li>
 
-  Graphic Designer
-  New York, United States
-  Apply
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/twitter.svg"
+                  alt="visit our twitter page"
+                />
+              </a>
+            </li>
 
-  Fleet Supervisor
-  Jakarta, Indonesia
-  Apply
-
-  UX Analyst
-  London, United Kingdom
-  Apply
-
-  
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
-
-</body>
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/instagram.svg"
+                  alt="visit our instagram page"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>

@@ -1,49 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  About
-  Location
-  Careers
+    <link rel="stylesheet" href="../styles/css/main.css" />
 
-  Get Scootin
+    <title>Frontend Mentor | Scoot</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <a href="index.html" class="logo">
+          <img src="../assets/logo.svg" alt="Scoot company logo" />
+        </a>
 
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="about.html" class="main-nav__link">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="locations.html" class="main-nav__link">Location</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="careers.html" class="main-nav__link">Careers</a>
+          </li>
+        </ul>
 
+        <div class="main-nav__cta">
+          <a href="#" class="cta cta__primary">Get Scootin</a>
+        </div>
+      </nav>
 
-  Locations
+      <section class="inner-page__showcase">
+        <div class="inner-page__showcase-message">
+          <h1>Locations</h1>
+        </div>
+      </section>
+    </header>
 
+    <section class="locations">
+      <div class="locations__info">
+        <h4>New York</h4>
+      </div>
+      <div class="locations__info">
+        <h4>London</h4>
+      </div>
+      <div class="locations__info">
+        <h4>Yokohama</h4>
+      </div>
+      <div class="locations__info">
+        <h4>Jakarta</h4>
+      </div>
+    </section>
 
+    <section class="city-list">
+      <div class="city-list__title">
+        <h2>Your city not listed?</h2>
+      </div>
 
-  New York
-  London
-  Yokohama
-  Jakarta
+      <div class="city-list__body">
+        <p>
+          If you’d like to see Scoot in your hometown, be sure to let us know.
+          We track requests and plan launches based on demand. Feel free to
+          message us by clicking the link or messaging us on social.
+        </p>
+      </div>
 
-  Your city not listed?
+      <div class="city-list__cta">
+        <a href="#" class="cta cta__primary">
+          Message Us
+        </a>
+      </div>
+    </section>
 
-  If you’d like to see Scoot in your hometown, be sure to let us know. We track 
-  requests and plan launches based on demand. Feel free to message us by clicking 
-  the link or messaging us on social.
+    <footer class="main-footer">
+      <section class="sign-up">
+        <h2>Sign up and Scoot off today</h2>
+        <div class="sign-up__btns">
+          <a href="#" class="sign-up__btn">
+            <img
+              src="../assets/icons/google-play.svg"
+              alt="get our app in the google play store"
+            />
+          </a>
 
-  Message Us
+          <a href="#" class="sign-up__btn">
+            <img
+              src="../assets/icons/app-store.svg"
+              alt="get our app in the apple app store"
+            />
+          </a>
+        </div>
+      </section>
 
-  
+      <nav class="main-footer__nav">
+        <div class="main-footer__nav-details">
+          <a href="#" class="logo logo-light"></a>
+          <ul class="main-footer__nav-items">
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link">About</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link">Location</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a href="#" class="main-footer__nav-link"> Careers </a>
+            </li>
+          </ul>
+        </div>
 
-  Sign up and Scoot off today
+        <div class="main-footer__nav-social">
+          <ul class="main-footer__nav-icons">
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/facebook.svg"
+                  alt="visit our facebook page"
+                />
+              </a>
+            </li>
 
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/twitter.svg"
+                  alt="visit our twitter page"
+                />
+              </a>
+            </li>
 
-
-  About
-  Location
-  Careers
-
-</body>
+            <li class="main-footer__nav-icon">
+              <a href="#" class="main-footer__nav-icon__link">
+                <img
+                  src="../assets/icons/instagram.svg"
+                  alt="visit our instagram page"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
