@@ -50,6 +50,16 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
 img {
   display: inline-block;
   width: 100%;
@@ -70,20 +80,42 @@ img {
   background-size: contain;
 }
 
+.container {
+  max-width: 77%;
+  margin: 0 auto;
+}
+
 .flex-item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.grid-item {
+.flex-item__center {
+  align-items: center;
+}
+
+.grid {
   display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
 .rounded-img {
-  width: 445px;
   border-radius: 50%;
+}
+
+.rounded-img__lg {
+  width: 445px;
+}
+
+.rounded-img__sm {
+  width: 240px;
 }
 
 .dark-text {
@@ -92,6 +124,40 @@ img {
 
 .dim-text {
   color: #939caa;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.question {
+  background-color: #f2f5f9;
+  padding: 32px 40px 32px 40px;
+}
+
+.w-desktop {
+  max-width: 445px;
+}
+
+.w-7 {
+  max-width: 70%;
+}
+
+.mt-0 {
+  margin-top: 20px;
+}
+
+.mt-1 {
+  margin-top: 24px;
+}
+
+.mt-2 {
+  margin-top: 27px;
+}
+
+.my-1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .cta {
@@ -119,8 +185,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1106px;
-  margin: 22px 165px;
+  margin: 22px auto;
 }
 
 .main-nav__details {
@@ -261,9 +326,7 @@ img {
 
 .process {
   margin-top: 80px;
-  margin-right: 160px;
   margin-bottom: 50px;
-  padding-left: 160px;
   gap: 26px;
 }
 
@@ -277,56 +340,135 @@ img {
 }
 
 .usage {
-  margin-left: 165px;
   margin-top: 150px;
   margin-bottom: 80px;
 }
 
-.usage__message {
-  width: 445px;
-}
-
 .usage__message p {
-  margin-top: 24px;
   margin-bottom: 40px;
 }
 
-.usage__graphic {
-  margin-right: 165px;
-}
-
 .coming-soon {
-  padding-left: 165px;
   margin-bottom: 80px;
 }
 
-.coming-soon__message {
-  width: 445px;
-  margin-right: 165px;
-}
-
 .coming-soon__message p {
-  margin-top: 24px;
   margin-bottom: 40px;
 }
 
 .ease-of-use {
   margin-top: 80px;
   margin-bottom: 200px;
-  margin-left: 165px;
-  padding-right: 165px;
-}
-
-.ease-of-use__message {
-  width: 445px;
 }
 
 .ease-of-use__message p {
-  margin-top: 24px;
   margin-bottom: 40px;
 }
 
 #about-showcase {
   background-image: url("../../assets/images/about-hero-desktop.jpg");
+}
+
+.mobility {
+  margin-top: 120px;
+}
+
+.urban-living {
+  margin: 120px auto;
+}
+
+.values {
+  margin-bottom: 120px;
+}
+
+.values__header {
+  margin-bottom: 32px;
+}
+
+.values__details-header {
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+
+.values__details-number {
+  background-color: #fcb72b;
+  border-radius: 50%;
+  max-width: 96px;
+  padding: 34px 36px 30px 36px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.values__details-number p {
+  font-size: 24px;
+}
+
+.values .grid-item {
+  gap: 30px;
+}
+
+.faqs {
+  margin-bottom: 160px;
+}
+
+.faqs__process {
+  margin: 64px 0;
+}
+
+.locations {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  height: 542px;
+  background-image: url("../../assets/images/world-map-desktop.png");
+  position: relative;
+}
+
+.locations__info {
+  position: absolute;
+  background-color: #fcb72b;
+}
+
+.locations__info:first-of-type {
+  top: 72px;
+  left: 147px;
+}
+
+.locations__info:nth-of-type(2) {
+  top: 18px;
+  left: 393px;
+}
+
+.locations__info:nth-of-type(3) {
+  top: 78px;
+  right: 65px;
+}
+
+.locations__info:last-of-type {
+  top: 251px;
+  right: 142px;
+}
+
+.city-list {
+  margin-bottom: 120px;
+}
+
+.city-list__cta {
+  margin-left: 105px;
+}
+
+.mission {
+  margin: 120px auto;
+}
+
+.position {
+  background-color: #f2f5f9;
+  margin: 12px 0;
+  padding: 32px 64px 37px 40px;
+}
+
+.positions {
+  margin-bottom: 160px;
 }
 /*# sourceMappingURL=main.css.map */

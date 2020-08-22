@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <div class="main-nav__details">
           <a href="index.html" class="logo">
             <img src="assets/logo.svg" alt="Scoot company logo" />
@@ -50,10 +50,10 @@
       </section>
     </header>
 
-    <section class="mission">
-      <div class="mission__message">
-        <h2>Care to join our mission?</h2>
-        <p>
+    <section class="mission flex-item flex-item__center container">
+      <div class="mission__message w-desktop">
+        <h2 class="dark-text">Care to join our mission?</h2>
+        <p class="dim-text">
           We’re always looking for ambitious individuals to help us on our
           journey. If you’re passionate about our mission to provide clean,
           accessible transport to improve urban living we want to hear from you!
@@ -64,84 +64,90 @@
       </div>
       <div class="mission__graphic">
         <img
+          class="rounded-img rounded-img__lg"
           src="assets/images/join-us.jpg"
           alt="person holding a tablet leading a team meeting"
         />
       </div>
     </section>
 
-    <section class="values">
-      <div class="values__header">
-        <h2>Why join us?</h2>
+    <section class="values container">
+      <div class="values__header text-center" style="margin-bottom: 48px;">
+        <h2 class="dark-text">Why join us?</h2>
       </div>
 
-      <div class="values__details">
-        <div class="values__details-header">
-          <div class="values__details-graphic">
-            <img
-              src="assets/images/our-tech.jpg"
-              alt="person holding phone with right hand"
-            />
+      <div class="grid grid-3">
+        <div class="values__details text-center">
+          <div class="values__details-header">
+            <div class="values__details-graphic">
+              <img
+                class="rounded-img rounded-img__sm"
+                src="assets/images/our-tech.jpg"
+                alt="person holding phone with right hand"
+              />
+            </div>
+            <div class="values__details-number">
+              <p>01</p>
+            </div>
           </div>
-          <div class="values__details-number">
-            <p>01</p>
+          <div class="values__details-body">
+            <h4 class="dark-text">Our tech</h4>
+            <p class="dim-text mt-2">
+              We’re using cutting edge technology to drive accessible urban
+              transportation forward. Our fully electric scooters are a joy to
+              ride!
+            </p>
           </div>
         </div>
-        <div class="values__details-body">
-          <h4>Our tech</h4>
-          <p>
-            We’re using cutting edge technology to drive accessible urban
-            transportation forward. Our fully electric scooters are a joy to
-            ride!
-          </p>
-        </div>
-      </div>
 
-      <div class="values__details">
-        <div class="values__details-header">
-          <div class="values__details-graphic">
-            <img
-              src="assets/images/our-integrity.jpg"
-              alt="driver riding on a scooter"
-            />
+        <div class="values__details text-center">
+          <div class="values__details-header">
+            <div class="values__details-graphic">
+              <img
+                class="rounded-img rounded-img__sm"
+                src="assets/images/our-integrity.jpg"
+                alt="driver riding on a scooter"
+              />
+            </div>
+            <div class="values__details-number">
+              <p class="dark-text">02</p>
+            </div>
           </div>
-          <div class="values__details-number">
-            <p>02</p>
+          <div class="values__details-body">
+            <h4 class="dark-text">Our integrity</h4>
+            <p class="dim-text mt-2">
+              We are fully committed to deliver a great yet safe, sustainable
+              micro-mobility experience in every city we serve.
+            </p>
           </div>
         </div>
-        <div class="values__details-body">
-          <h4>Our integrity</h4>
-          <p>
-            We are fully committed to deliver a great yet safe, sustainable
-            micro-mobility experience in every city we serve.
-          </p>
-        </div>
-      </div>
 
-      <div class="values__details">
-        <div class="values__details-header">
-          <div class="values__details-graphic">
-            <img
-              src="assets/images/our-community.jpg"
-              alt="group of people walking"
-            />
+        <div class="values__details text-center">
+          <div class="values__details-header">
+            <div class="values__details-graphic">
+              <img
+                class="rounded-img rounded-img__sm"
+                src="assets/images/our-community.jpg"
+                alt="group of people walking"
+              />
+            </div>
+            <div class="values__details-number">
+              <p class="dark-text">03</p>
+            </div>
           </div>
-          <div class="values__details-number">
-            <p>03</p>
+          <div class="values__details-body">
+            <h4 class="dark-text">Our community</h4>
+            <p class="dim-text mt-2">
+              We support every community we serve. All workers are paid a living
+              wage based on their location and are Scoot employees.
+            </p>
           </div>
-        </div>
-        <div class="values__details-body">
-          <h4>Our community</h4>
-          <p>
-            We support every community we serve. All workers are paid a living
-            wage based on their location and are Scoot employees.
-          </p>
         </div>
       </div>
     </section>
 
-    <section class="positions">
-      <div class="position">
+    <section class="positions container">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>General Manager</h4>
           <p>Jakarta, Indonesia</p>
@@ -151,7 +157,7 @@
         </div>
       </div>
 
-      <div class="position">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>UI/UX Designer</h4>
           <p>Yokohama, Japan</p>
@@ -161,7 +167,7 @@
         </div>
       </div>
 
-      <div class="position">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>Blog Content Copywriter</h4>
           <p>New York, United States</p>
@@ -171,7 +177,7 @@
         </div>
       </div>
 
-      <div class="position">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>Graphic Designer</h4>
           <p>New York, United States</p>
@@ -181,7 +187,7 @@
         </div>
       </div>
 
-      <div class="position">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>Fleet Supervisor</h4>
           <p>Jakarta, Indonesia</p>
@@ -191,7 +197,7 @@
         </div>
       </div>
 
-      <div class="position">
+      <div class="position flex-item flex-item__center">
         <div class="position__info">
           <h4>UX Analyst</h4>
           <p>London, United Kingdom</p>
