@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -9,25 +15,25 @@ h4 {
 h1 {
   font-size: 56px;
   line-height: 56px;
-  letter-spacing: -2.5;
+  letter-spacing: -2.5px;
 }
 
 h2 {
   font-size: 48px;
   line-height: 48px;
-  letter-spacing: -2.14;
+  letter-spacing: -2.14px;
 }
 
 h3 {
   font-size: 40px;
   line-height: 48px;
-  letter-spacing: -1.79;
+  letter-spacing: -1.79px;
 }
 
 h4 {
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: -1.07;
+  letter-spacing: -1.07px;
 }
 
 body {
@@ -49,6 +55,45 @@ img {
   width: 100%;
 }
 
+.inner-page__showcase {
+  padding-top: 72px;
+  padding-bottom: 54px;
+  background-image: url("../../assets/images/careers-locations-hero-desktop.jpg");
+}
+
+.inner-page__showcase-message {
+  margin-left: 165px;
+  color: #fff;
+  background-image: url("../../assets/patterns/white-circles.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rounded-img {
+  width: 445px;
+  border-radius: 50%;
+}
+
+.dark-text {
+  color: #495567;
+}
+
+.dim-text {
+  color: #939caa;
+}
+
 .cta {
   border: 3px solid transparent;
   width: 195px;
@@ -67,6 +112,221 @@ img {
 .cta__primary:hover {
   border: 3px solid #fcb72b;
   color: #fcb72b;
-  background-color: transparent;
+  background-color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1106px;
+  margin: 22px 165px;
+}
+
+.main-nav__details {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__items {
+  display: flex;
+}
+
+.main-nav__item:first-of-type {
+  margin-left: 60px;
+}
+
+.main-nav__item:nth-of-type(2) {
+  margin-left: 38px;
+}
+
+.main-nav__item:last-of-type {
+  margin-left: 52px;
+}
+
+.main-nav__link {
+  font-family: "Space Mono", monospace;
+}
+
+.main-footer {
+  background-color: #495567;
+}
+
+.main-footer__sign-up {
+  padding: 120px 165px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-image: url("../../assets/patterns/semi-circles.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.main-footer__sign-up h2 {
+  width: 415px;
+}
+
+.main-footer__sign-up__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 359px;
+}
+
+.main-footer__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #333a44;
+  padding: 35px 165px;
+}
+
+.main-footer__nav-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-footer__nav-items {
+  margin-left: 58px;
+  display: flex;
+}
+
+.main-footer__nav-item:nth-of-type(2) {
+  margin-left: 37px;
+  margin-right: 50px;
+}
+
+.main-footer__nav-link {
+  color: #939caa;
+}
+
+.main-footer__nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-footer__nav-icon:nth-of-type(2) {
+  margin: 0 24px;
+}
+
+.showcase {
+  background-image: url("../../assets/images/home-hero-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  overflow-x: hidden;
+  margin-bottom: 80px;
+}
+
+.showcase__message {
+  padding-left: 165px;
+  position: relative;
+}
+
+.showcase__message::after {
+  content: url("../../assets/patterns/white-circles.svg");
+  position: absolute;
+  right: -50px;
+  bottom: 10px;
+}
+
+.showcase__message h1 {
+  max-width: 500px;
+}
+
+.showcase__message p {
+  max-width: 405px;
+  margin-left: 95px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.showcase__message p::before {
+  content: url("../../assets/patterns/line.svg");
+  position: absolute;
+  top: 40px;
+  left: -160px;
+  transform: translate(-50%, -50%);
+}
+
+.showcase__message p:after {
+  content: url("../../assets/patterns/right-arrow.svg");
+  position: absolute;
+  top: 40px;
+  left: 420px;
+}
+
+.process {
+  margin-top: 80px;
+  margin-right: 160px;
+  margin-bottom: 50px;
+  padding-left: 160px;
+  gap: 26px;
+}
+
+.process__detail-header img {
+  width: 96px;
+}
+
+.process__detail-title {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.usage {
+  margin-left: 165px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.usage__message {
+  width: 445px;
+}
+
+.usage__message p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.usage__graphic {
+  margin-right: 165px;
+}
+
+.coming-soon {
+  padding-left: 165px;
+  margin-bottom: 80px;
+}
+
+.coming-soon__message {
+  width: 445px;
+  margin-right: 165px;
+}
+
+.coming-soon__message p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.ease-of-use {
+  margin-top: 80px;
+  margin-bottom: 200px;
+  margin-left: 165px;
+  padding-right: 165px;
+}
+
+.ease-of-use__message {
+  width: 445px;
+}
+
+.ease-of-use__message p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+#about-showcase {
+  background-image: url("../../assets/images/about-hero-desktop.jpg");
 }
 /*# sourceMappingURL=main.css.map */
