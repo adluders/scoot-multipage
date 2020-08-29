@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -133,6 +137,15 @@ img {
 .question {
   background-color: #f2f5f9;
   padding: 32px 40px 32px 40px;
+  min-width: 727px;
+}
+
+.is-open {
+  display: block !important;
+}
+
+.is-rotated {
+  transform: rotate(180deg);
 }
 
 .w-desktop {
@@ -274,6 +287,39 @@ img {
   margin: 0 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .flex-0 {
+    order: 0;
+  }
+  .flex-1 {
+    order: 1;
+  }
+  .flex-item {
+    text-align: center;
+  }
+  .flex-md {
+    flex-direction: column;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-footer__sign-up {
+    flex-direction: column;
+    text-align: center;
+    background-position: bottom center;
+  }
+  .main-footer__sign-up__btns {
+    margin: auto;
+    margin-top: 24px;
+  }
+  .main-footer__nav {
+    padding: 35px 40px;
+  }
+}
+
 .showcase {
   background-image: url("../../assets/images/home-hero-desktop.jpg");
   background-position: center;
@@ -365,6 +411,66 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .showcase {
+    position: relative;
+    background-image: url("../../assets/images/home-hero-tablet.jpg");
+    padding-top: 137px;
+    padding-bottom: 217px;
+  }
+  .showcase:before {
+    content: url("../../assets/patterns/right-arrow.svg");
+    position: absolute;
+    bottom: 40px;
+    left: -127px;
+  }
+  .showcase::after {
+    content: url("../../assets/patterns/white-circles.svg");
+    position: absolute;
+    right: -31px;
+    bottom: 45px;
+  }
+  .showcase__message {
+    padding-left: 0;
+    text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  .showcase__message h1,
+  .showcase__message p {
+    min-width: 100%;
+  }
+  .showcase__message:after {
+    content: "";
+  }
+  .showcase__message p {
+    margin-left: 0;
+  }
+  .showcase__message p::before {
+    content: "";
+  }
+  .showcase__message p:after {
+    content: "";
+  }
+  .process__detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .process__detail-header {
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .process__detail-info {
+    grid-column: 2 / 3;
+  }
+  main div[class*="__message"] {
+    margin-top: 64px;
+  }
+}
+
 #about-showcase {
   background-image: url("../../assets/images/about-hero-desktop.jpg");
 }
@@ -415,6 +521,25 @@ img {
 
 .faqs__process {
   margin: 64px 0;
+}
+
+.faq__body {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .values__details {
+    margin: 0 155px;
+  }
+  .values__details-header {
+    padding: 55px;
+  }
+  .question {
+    min-width: 100%;
+  }
+  .w-7 {
+    max-width: 100%;
+  }
 }
 
 .locations {
