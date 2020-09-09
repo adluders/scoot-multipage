@@ -287,6 +287,10 @@ img {
   margin: 0 24px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90%;
@@ -317,6 +321,54 @@ img {
   }
   .main-footer__nav {
     padding: 35px 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .mobile-nav__header {
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+    padding: 22px 0;
+  }
+  .mobile-nav__logo {
+    margin: 0 auto;
+  }
+  .mobile-nav__details {
+    background-color: #495567;
+    height: 603px;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+    width: 256px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+  }
+  .mobile-nav__item {
+    margin: 25px 0;
+  }
+  .mobile-nav__link {
+    color: #e5ecf4;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+  }
+  .mobile-nav__overlay {
+    height: 603px;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+    z-index: 1;
   }
 }
 
@@ -583,6 +635,15 @@ img {
   margin-left: 105px;
 }
 
+@media screen and (max-width: 768px) {
+  .city-list__body {
+    margin: 40px 0;
+  }
+  .city-list__cta {
+    margin-left: 0;
+  }
+}
+
 .mission {
   margin: 120px auto;
 }
@@ -595,5 +656,14 @@ img {
 
 .positions {
   margin-bottom: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .mission__message {
+    margin-top: 64px;
+  }
+  .mission__message p {
+    margin: 24px auto 40px auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
