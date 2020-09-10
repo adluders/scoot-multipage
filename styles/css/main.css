@@ -607,7 +607,7 @@ img {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .inner-page__showcase-message {
     background: none;
   }
