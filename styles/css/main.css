@@ -493,7 +493,7 @@ img {
   margin-bottom: 160px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     max-width: 90%;
   }
@@ -607,7 +607,7 @@ img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .inner-page__showcase-message {
     background: none;
   }
